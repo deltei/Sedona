@@ -6,8 +6,8 @@
   </head>
   <body>
     <header class="main">
-    <div class="container">
-      <nav class="main_navigation">
+      <div class="container">
+       <nav class="main_navigation">
         <div class="navigation_left">
           <ul>
             <li>
@@ -31,10 +31,10 @@
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
+       </nav>
+      </div>
     </header>
-    <main class="container">
+     <main class="container">
       <div class="logo_content">
         <div class="logo_content welcome"> <!-- -->
           <img src="http:\\placeholder\260x90" alt="logo_welcome" width="260px" height="90px">
@@ -50,7 +50,7 @@
         </div>
         <div class="logo_content description">
           <p>Седона - небольшой городок в аризоне, заслуживающий большего!</p>
-          <p class="description_main">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p><!-- -->
+          <p class="description_main">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p><!--Номер причин? -->
         </div>
       </div>
       <div class="main_nav">
@@ -67,13 +67,16 @@
           <div class="main_nav_one_features">
             <div class="main_nav_one_features_one">
               <img src="http:\\placeholder\70x60" alt="house" width="70px" height="60px">
+              <span>Жильё</span>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </div>
             <div class="main_nav_one_features_two">
+              <span>Еда</span>
               <img src="http:\\placeholder\70x60" alt="food" width="70px" height="60px">
               <p>Всегда заказывайте фирменный бургер!Вы не разочаруетесь!</p>
             </div>
             <div class="main_nav_one_features_three">
+              <span>Сувениры</span>
               <img src="http:\\placeholder\70x60" alt="souvenirs" width="70px" height="60px">
               <p>Не только китайского, но и местного производства!</p>
             </div>
@@ -116,12 +119,54 @@
         </div>
       </div>
       <div class="main_nav_one">
+        <div class="main_nav_one_offering">
         Заинтересовались?
         <p>
           Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшее предложения гостиниц в седоне
           <!--Как быть с поиском?Это popup? -->
         </p>
+        </div>
+        <div class="main_nav_one_naving">
+          <img src="http:\\placeholder\1200x250" alt="Карта" width="1200px" height="250px">
+        </div>
+        <div class="search_offerting">
+          <div class="search_offerting_header">
+            Поиск гостиницы в седоне
+          </div>
+          <div class="search_offerting_main">
+          <form>
+           <div class="date_start">
+             Дата заезда:
+             <label for="date_start">
+              <input type="date" name="date_start" id="date_start">
+             </label>
+           </div>
+           <div class="date_finish">
+             Дата выезда:
+             <label for="date_finish">
+               <input type="date" name="date_finish" id="date_finish">
+             </label>
+           </div>
+           <div class="people">
+              <div class="people_adults">
+                 Взрослые
+              </div>
+              <div class="people_children">
+                 Дети
+              </div>
+           </div>
+           <button class="btn_offerting">
+            Найти
+           </button>
+          </form>
+          </div>
+          <div class="search_offerting_search">
+
+          </div>
+        </div>
+      </div>
+
       </div>
     </main>
     <footer class="footer">
