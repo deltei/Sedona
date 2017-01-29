@@ -1,0 +1,40 @@
+html,
+body {
+  min-height: 1200px;
+  min-height: 2770px;
+  line-height: 26px;
+  font-size: 12px;
+  color: #000000;
+  font-style: bold;
+  font-family: "PT Sans", "Times New Roman", sans-serif;
+}
+}
+h1 {
+  font-size: 21px;
+  line-height: 26px;
+  color: black;
+  font-style: bold;
+  font-family: "PT Sans", "Times New Roman", sans-serif;
+}
+h2 {
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  font-style: normal;
+  font-family: "PT Sans", "Times New Roman", sans-serif;
+}
+
+.main-nav h2 {
+  font-size: 14px;
+  line-height: 26px;
+  color: #ffffff;
+  font-style: normal;
+  font-family: "PT Sans", "Times New Roman", sans-serif;
+}
+.main-nav-block-text{
+    width: 400px;
+    height: 260px;
+    background-color: #81b3d2;
+
+
+  }
