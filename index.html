@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normilize.css">
 </head>
 <body>
   <header class="main-header">
@@ -17,8 +18,8 @@
             <a href="#">Фото и видео</a>
           </li>
         </ul>
-        <a href="index.html">
-          <img src="img/Logo-sedona.png" alt="Седона" width="140px" height="75px">
+        <a class="logo" href="index.html">
+          <img src="img/Logo-sedona.png" alt="Седона" width="140" height="75">
         </a>
         <ul class="right">
           <li>
@@ -39,7 +40,7 @@
     </div>
     <div class="description">
       <div class="description-main">
-      <h1>Седона - небольшой городок в аризоне,<br> заслуживающий большего!</h1>
+        <h1>Седона - небольшой городок в аризоне,<br> заслуживающий большего!</h1> <!--Думала сделать так, но решила пока не рисковать -->
       </div>
       <div class="description-add">
         <h2>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
@@ -48,12 +49,16 @@
     <section class="main-block">
       <section class="block-top">
         <div class="image-block"></div>
-        <div class="block-top-text">
-          <h1>Настоящий<br>городок</h1>
-          <h2>&mdash; №1 &mdash;</h2>
-          <h2>Седона - не аттракцион для туристов,<br> там течет своя жизнь</h2>
+        <div class="text">
+          <div class="block-top-text">
+            <h1>Настоящий<br>городок</h1>
+            <h2>&mdash; №1 &mdash;</h2>
+            <h2>Седона - не аттракцион для туристов,<br> там течет своя жизнь</h2>
+          </div>
         </div>
-        <div class="block-top-img"></div>
+        <div class="image_top">
+          <div class="block-top-img"></div>
+        </div>
         <section class="block-top-features">
           <div class="block-top-feature">
             <img src="img/house.png" alt="house" width="75" height="75">
@@ -79,8 +84,7 @@
           <h2>Да, по нему можно пройти. Если конечно<br>Вы осмелитесь</h2>
         </div>
         <div class="block-bottom-img"></div>
-        <section class="block-bottom-features">
-
+        <article> class="block-bottom-features">
           <div class="block-bottom-feature">
             <h3>Небольшая площадь</h3>
             <h2>&mdash; №3 &mdash;</h2>
@@ -96,7 +100,7 @@
             <h2>&mdash; №5 &mdash;</h2>
             <p>Большинство едет в гранд каньон и<br>толпятся там!</p>
           </div>
-        </section>a
+        </article>
       </section>
     </section>
 
@@ -145,12 +149,8 @@
               <div class="people-img"></div>
             </div>
           </div>
-
-          <button class="btn">
-            <h1>Найти</h1>
-          </button>
+          <button class="btn">Найти</button>
         </form>
-
       </div>
     </section>
   </section>
