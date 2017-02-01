@@ -67,9 +67,8 @@ h2 {
 
 }
 
-.left, .left {
+.left, .right {
   margin-top:0;
-  float: left;
   width: 490px;
   height: 60px;
   background-color: red;
@@ -78,6 +77,7 @@ h2 {
 .right {
   float: right;
   }
+
  .left{
   float: left;
  }
