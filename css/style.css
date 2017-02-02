@@ -24,17 +24,16 @@ body {
 body {
   margin: 0;
   padding: 0;
-  background: #ffffff url("background photo(1200х570).png") no-repeat 50% 3px;
-  background-size: 1200px auto;
+ /* background: #ffffff url("background photo(1200х570).png") no-repeat 50% 3px;*/
 }
 
-
-}
-h1 {
+/* для p задала класс h1, это нормально или всё-таки имя поменять?*/
+h1, .h1 {
   font-size: 21px;
   line-height: 26px;
   color: black;
   font-style: bold;
+}
 
 }
 h2 {
@@ -45,31 +44,47 @@ h2 {
   text-transform: uppercase;
 }
 
-.main-header {
-  min-height: 60px;
-  color: #ffffff;
-
+.left ul, .right ul {
+  list-style: none;
 }
-
+.main-header {
+  height: 60px;
+  color: #ffffff;
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-navigation {
+  height: 60px;
+  width: 1200px;
+}
+/*После main-header какая-то белая полоса, откуда она, отследить не смогла*/
 .container {
   width: 1200px;
-  padding: 0;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
 }
+
 /*Саша говорил что так даже лучше, чтобы не запутаться в процессе обучения буду так делать*/
-.main-navigation img {
-  position: absolute;
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+  height: 20px;
+  background-color: white;
+  background-image: linear-gradient(-45deg, white 45%, black 50%, white 55%);
+  background-size: 20px;
+}
+.logo {
   width: 140px;
   height: 75px;
-
 }
 
 .left, .right {
-  margin-top:0;
-  width: 490px;
+  width: 530px;
   height: 60px;
   background-color: red;
 }
@@ -81,15 +96,15 @@ h2 {
  .left{
   float: left;
  }
+ /*Почему не прижимается к header??*/
 .image {
   position: relative;
   margin-top: 0px; /*Пыталась прижать к header'у блок с фоном и пр. */
-  width:1200px ;
+  width:100% ;
   height: 510px;
 }
 .background {
-
-  width: 1200px;
+  width: 100%;
   height: 510px;
   margin-top: 60px;
   margin-bottom: 0px;
@@ -99,7 +114,7 @@ h2 {
 .background-add {
   position: absolute;
   bottom: 0px;
-  width: 1200px;
+  width: 100%;
   height: 60px;
   background-image: url("../img/background.png");
   background-size: 1200px 60px;
@@ -108,7 +123,7 @@ h2 {
 .logo-content {
   /*position: absolute; а почему так, он же съезжает вниз?*/
   margin: 0px auto;
-  bottom: auto;
+  bottom: 90px;
   left: auto; /**/
   right: auto;
   top: auto;
@@ -138,14 +153,14 @@ h2 {
 }
 .block-top {
   width: 1200px;
-  height: 580px;
+  height: 590px;
   background-color: #f55353;
 }
 
 .block-bottom {
   top: 0;
   width: 1200px;
-  height: 520px;
+  height: 510px;
   background-color: #eb8686;
 }
 .block-top-text {
@@ -165,7 +180,7 @@ h2 {
   vertical-align: middle;
   text-align: center;
   width: 1200px;
-  height: 300px;
+  height: 330px;
   background-color: #ffffff;
 }
 .block-bottom-features {
@@ -187,9 +202,11 @@ h2 {
   margin-left: auto;
   float: left;
   width: 400px;
+  height: 300px;
+  background-color: #eeeeee;
  }
 .
-.main-nav-block_ {
+.main-nav-block {
   width: 1200px;
   height: 510px;
   margin-left: 0;
@@ -209,7 +226,7 @@ h2 {
   float: right;
   margin-left: auto;
   width: 800px;
-  height: 300px;
+  height: 260px;
   background-color: #ffffff;
   background-size: 800px 260px;
   background-image: url("../img/image_block_2.png");
@@ -221,38 +238,33 @@ h2 {
   height: 350px;
   background-color: red;
 }
-.map { /*как переместить на карту?*/
-  position: absolute;
+.offer-text { /*Пропал блок, как вывести его?*/
+
+  width: 1200px;
+  height: 300px;
+  background-color: red;
+}
+.map {
+  /*Если задать здесь absolute, пропадает offer-text или см..footer*/
   bottom: 0;
   margin-top: 0;
   width: 1200px;
-  height: 750px;
+  height: 480px;
   background-color: black;
   background-image: url("../img/map.png");
 }
 
 .search-offer {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
   position: absolute;
+  margin-top: 200px;
   top: 0;
-  padding-bottom: 200px;
   width: 570px;
-  height: 490px;
+  height: 480px;
   background-color: rgba(100,100,100,0.2);
   margin-right: 350px;
   margin-left: 350px;
 }
 
-.footer {
-
-  width: 1200px;
-  height: 120px;
-  background-color: red;
-  margin-left: auto;
-  margin-right: auto;
-}
 .search-text {
   width:570px;
   height: 90px;
@@ -267,6 +279,52 @@ h2 {
 .date-main {
   background-color: red;
 }
+
+.footer {
+  width: 1200px;
+  height: 120px;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+ /*Пропадает либо .map либо .footer */
+}
+.footer-visit, .footer-develop, .footer-socials {
+  width: 400px;
+  height: 120px;
+}
+.footer-visit,.footer-socials  {
+  float: left;
+
+}
+
+.footer-develop {
+  float: right;
+  margin-right: 0;
+}
+
+.btn-socials {
+  background-color: skyblue;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.footer-socials {
+  width: 400px;
+  height: 120px;
+  background-color: blue;
+}
+
+.btn-tw, btn-fb {
+  float: left;
+}
+.btn-yt {
+  float: right;
+  margin-right: 0;
+}
+
+
+
 /*sedona-hotels*/
 
 .filter-type {
@@ -292,7 +350,7 @@ h2 {
 }
 
 .infrastructure-right {
-  /*Как поднять?*/
+
   display: inline-block;
   text-align: left;
   vertical-align: middle;
@@ -309,5 +367,3 @@ h2 {
   background-color: #4e81ac;
   margin-right: 0;
 }
-/*Хрень какая-то ^^^*/
-

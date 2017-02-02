@@ -8,27 +8,31 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="container">
+    <div class="container clearfix">
       <nav class="main-navigation">
-        <ul class="left">
-          <li>
-            <a href="#">Информация</a>
-          </li>
-          <li>
-            <a href="#">Фото и видео</a>
-          </li>
-        </ul>
+        <div class="left">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+          </ul>
+        </div>
         <a class="logo" href="index.html">
           <img src="img/Logo-sedona.png" alt="Седона" width="140" height="75">
         </a>
-        <ul class="right">
-          <li>
-            <a href="#">Карта штата</a>
-          </li>
-          <li>
-            <a href="#">Гостиницы</a>
-          </li>
-        </ul>
+        <div class="right">
+          <ul>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
@@ -47,19 +51,19 @@
       </div>
     </div>
     <section class="main-block">
-      <section class="block-top">
+      <div class="block-top">
         <div class="image-block"></div>
         <div class="text">
           <div class="block-top-text">
-            <h1>Настоящий<br>городок</h1>
+            <p class="h1">Настоящий<br>городок</p>
             <h2>&mdash; №1 &mdash;</h2>
             <h2>Седона - не аттракцион для туристов,<br> там течет своя жизнь</h2>
           </div>
         </div>
-        <div class="image_top">
+        <div class="image-top">
           <div class="block-top-img"></div>
         </div>
-        <section class="block-top-features">
+        <div class="block-top-features">
           <div class="block-top-feature">
             <img src="img/house.png" alt="house" width="75" height="75">
             <h3>Жильё</h3>
@@ -75,16 +79,16 @@
             <h3>Сувениры</h3>
             <h2>Не только китайского, но и местного производства!</h2>
           </div>
-        </section>
-      </section>
-      <section class="block-bottom">
+        </div>
+      </div>
+      <div class="block-bottom">
         <div class="block-bottom-text">
-          <h1>Там есть<br>мост дьявола</h1>
+          <p class="h1">Там есть<br>мост дьявола</p>
           <h2>&mdash; №2 &mdash;</h2>
           <h2>Да, по нему можно пройти. Если конечно<br>Вы осмелитесь</h2>
         </div>
         <div class="block-bottom-img"></div>
-        <article> class="block-bottom-features">
+        <div class="block-bottom-features">
           <div class="block-bottom-feature">
             <h3>Небольшая площадь</h3>
             <h2>&mdash; №3 &mdash;</h2>
@@ -100,20 +104,20 @@
             <h2>&mdash; №5 &mdash;</h2>
             <p>Большинство едет в гранд каньон и<br>толпятся там!</p>
           </div>
-        </article>
-      </section>
+        </div>
+      </div>
     </section>
-
-    <section class="offer">
+    <div class="offer">
       <div class="offer-text">
-        <h1>Заинтересовались?</h1>
+        <p class="h1">Заинтересовались?</p>
         <h2>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшее предложения гостиниц в седоне</h2>
         </div>
+
         <div class="map"></div>
         <section class="search-offer">
           <div class="search-text">
-            <h1>Поиск гостиницы в седоне</h1>
+            <p class="h1">Поиск гостиницы в седоне</p>
           </div>
           <div class="main-search">
             <form method="get" action="https://echo.htmlacademy.ru/">
@@ -153,22 +157,29 @@
         </form>
       </div>
     </section>
-  </section>
+
+  </div>
 </main>
 <footer class="footer">
-  <div class="container">
-    <div class="footer-visit">
+  <div class="container clearfix">
+    <div class="footer-visit ">
       <a href="index.html">#VisitSedona</a>
     </div>
     <div class="footer-socials">
       <div class="twitter">
-        <a class="btn-socials btn-tw" href="#">tw</a>
+        <a class="btn-socials btn-tw" href="#">
+          <img src="img/t.png" alt="Twitter" width="20" height="20">
+        </a>
       </div>
       <div class="facebook">
-        <a class="btn-socials btn-fb" href="#">fb</a>
+        <a class="btn-socials btn-fb" href="#">
+          <img src="img/f.png" alt="Facebook" width="20" height="20">
+        </a>
       </div>
       <div class="youtube">
-        <a class="btn-socials btn-yt" href="#">youtube</a>
+        <a class="btn-socials btn-yt" href="#">
+          <img src="img/youtube.png" alt="youtube" width="20" height="20">
+        </a>
       </div>
     </div>
     <div class="footer-develop">
@@ -177,6 +188,5 @@
     </div>
   </div>
 </footer>
-
 </body>
 </html>
