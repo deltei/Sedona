@@ -1,108 +1,131 @@
 @font-face {
-  font-family: "PT Sans";
-  src: url("/fonts/PTC55F.ttf");
-  src: url("/fonts/PTC75F.ttf");
-  src: url("/fonts/PTN57F.ttf");
-  src: url("/fonts/PTC55F.ttf");
-  src: url("/fonts/PTN77F.ttf");
-  src: url("/fonts/PTS55F.ttf");
-  src: url("/fonts/PTS56F.ttf");
-  src: url("/fonts/PTS75F.ttf");
-  src: url("/fonts/PTS76F.ttf");
+font-family: "PT Sans";
+src: url("/fonts/PTC55F.ttf");
+src: url("/fonts/PTC75F.ttf");
+src: url("/fonts/PTN57F.ttf");
+src: url("/fonts/PTC55F.ttf");
+src: url("/fonts/PTN77F.ttf");
+src: url("/fonts/PTS55F.ttf");
+src: url("/fonts/PTS56F.ttf");
+src: url("/fonts/PTS75F.ttf");
+src: url("/fonts/PTS76F.ttf");
 }
 /*Все, которые были в папке, как правильно?*/
 
 html,
 body {
-  line-height: 26px;
-  font-size: 12px;
-  color: #000000;
-  font-style: bold;
-  font-family: "PT Sans", "Times New Roman", sans-serif;
+line-height: 26px;
+font-size: 12px;
+color: #000000;
+font-style: bold;
+font-family: "PT Sans", "Times New Roman", sans-serif;
 }
 
 body {
-  margin: 0;
-  padding: 0;
- /* background: #ffffff url("background photo(1200х570).png") no-repeat 50% 3px;*/
+margin: 0;
+padding: 0;
+/* background: #ffffff url("background photo(1200х570).png") no-repeat 50% 3px;*/
 }
 
 /* для p задала класс h1, это нормально или всё-таки имя поменять?*/
 h1, .h1 {
-  font-size: 21px;
-  line-height: 26px;
-  color: black;
-  font-style: bold;
+font-size: 21px;
+line-height: 26px;
+color: black;
+font-style: bold;
 }
 
 }
 h2 {
-  font-size: 14px;
-  line-height: 26px;
-  color: #333333;
-  font-style: normal;
-  text-transform: uppercase;
+font-size: 14px;
+line-height: 26px;
+color: #333333;
+font-style: normal;
+text-transform: uppercase;
 }
 
 .left ul, .right ul {
-  list-style: none;
+list-style: none;
 }
 .main-header {
-  height: 60px;
-  color: #ffffff;
-  width: 1200px;
-  margin: 0 auto;
+height: 60px;
+color: #ffffff;
+width: 1200px;
+margin: 0 auto;
 }
 .main-navigation {
-  height: 60px;
-  width: 1200px;
+height: 60px;
+width: 1200px;
 }
 /*После main-header какая-то белая полоса, откуда она, отследить не смогла*/
 .container {
-  width: 1200px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
+width: 1200px;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+margin-bottom: 0;
 }
 
 /*Саша говорил что так даже лучше, чтобы не запутаться в процессе обучения буду так делать*/
 
 .clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-  height: 20px;
-  background-color: white;
-  background-image: linear-gradient(-45deg, white 45%, black 50%, white 55%);
-  background-size: 20px;
+content: "";
+display: table;
+clear: both;
+height: 20px;
+background-color: white;
+background-image: linear-gradient(-45deg, white 45%, black 50%, white 55%);
+background-size: 20px;
 }
 .logo {
-  width: 140px;
-  height: 75px;
+width: 140px;
+height: 75px;
 }
 
 .left, .right {
-  width: 530px;
-  height: 60px;
-  background-color: red;
+width: 530px;
+height: 60px;
+background-color: red;
 }
 
 .right {
-  float: right;
-  }
+float: right;
+}
+ul {
+padding-left: auto;
+padding-right: auto;
+width: 530px;
+}
 
- .left{
+.right li,
+.left li {
+list-style: none;
+}
+/*.main-navigation li {
+display: inline-block;
+}*/
+
+/*.main-navigation a {
+padding-left: auto;
+}*/
+.main-navigation li  {
   float: left;
- }
- /*Почему не прижимается к header??*/
+  width: 25%;
+  margin-left: auto;
+
+}
+.left {
+  float: left;
+}
+/*Почему не прижимается к header??*/
 .image {
   position: relative;
   margin-top: 0px; /*Пыталась прижать к header'у блок с фоном и пр. */
   width:100% ;
   height: 510px;
 }
+
 .background {
   width: 100%;
   height: 510px;
@@ -144,7 +167,7 @@ h2 {
   width: 1200px;
   height: 210px;
   background-color: #ffffff;
- }
+}
 /* Как задать цвет для h2*/
 .main-block {
   width:1200px;
@@ -196,7 +219,7 @@ h2 {
   margin-left: auto;
   float: left;
   width: 400px;
- }
+}
 
 .block-bottom-feature {
   margin-left: auto;
@@ -204,7 +227,7 @@ h2 {
   width: 400px;
   height: 300px;
   background-color: #eeeeee;
- }
+}
 .
 .main-nav-block {
   width: 1200px;
@@ -286,7 +309,7 @@ h2 {
   background-color: red;
   margin-left: auto;
   margin-right: auto;
- /*Пропадает либо .map либо .footer */
+  /*Пропадает либо .map либо .footer */
 }
 .footer-visit, .footer-develop, .footer-socials {
   width: 400px;
@@ -294,7 +317,6 @@ h2 {
 }
 .footer-visit,.footer-socials  {
   float: left;
-
 }
 
 .footer-develop {
@@ -315,7 +337,7 @@ h2 {
   background-color: blue;
 }
 
-.btn-tw, btn-fb {
+.btn-tw, .btn-fb {
   float: left;
 }
 .btn-yt {
@@ -323,47 +345,145 @@ h2 {
   margin-right: 0;
 }
 
+/*sedona-hotels////inner.html*/
 
+.main {
 
-/*sedona-hotels*/
+  width: 1200px;
+  height: 760px;
 
-.filter-type {
+}
+.main-filter {
   width: 1200px;
   height: 220px;
-  background-color: #4e81ac;
-}
 
+}
 .infrastructure {
-  position: relative;
-  width:600px;
+  float: left;
+  width: 600px;
   height: 220px;
-  background-color: #4778a1;
+  background-color: white;
 }
 .infrastructure-left {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   float: left;
   width: 300px;
   height: 220px;
-  background-color: #4e81ac;
+  background-color: rgba(0,0,0, 0.3);
 }
-
 .infrastructure-right {
-
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
-  top: 0;
   float: right;
   width: 300px;
   height: 220px;
-  background-color: red;
+  background-color: rgba(0,0,0, 0.5);
 }
 .price {
   float: right;
-  width: 600px;
+  width:600px;
   height: 220px;
-  background-color: #4e81ac;
+  background-color: red;
+}
+
+.filter-search {
+  float: left;
+  width: 1200px;
+  height: 90px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.sorting-search {
+  float: left;
+  width: 240px;
+  height: 90px;
+  background-color: white;
+}
+.sorting-buttom {
+  float: left;
+  width: 860px;
+  height: 90px;
+  background-color: white;
+}
+.price-button, .type-button, .rating-button {
+  float: left;
+  height: 15px;
+  width: 33%;
+  margin: 0 auto;
+}
+.rating {
   margin-right: 0;
 }
+.sorting-buttom-right{
+  float: right;
+  width: 100px;
+  height: 90px;
+  background-color: white;
+}
+
+.buttom-right {
+  width: 50px;
+  height: 20px;
+}
+.search-results {
+  position: relative;
+  margin-top: 90px;
+  width: 1200px;
+  height: 450px;
+  background-color: yellow;
+}
+.search-result {/*Как оттолкнуть от*/
+  position: absolute;
+  margin-top: 0px;
+  width: 1200px;
+  height: 150px;
+  background-color: white;
+}
+.result-img {
+  position: absolute;
+  margin-top: 0;
+  float: left;
+  width: 135px;
+  height: 90px;
+  margin-left:
+}
+
+.result-main {
+  position: absolute;
+  margin-left: 135px;
+  margin-top: 0;
+  width: 760px;
+  height: 90px;
+  background-color: white;
+}
+
+.result-name {
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+.result-type {
+  width: 100%;
+  height: 10px;
+  display: inline-block;
+  text-align: left;
+}
+.result-button {
+  width: 100%;
+  height: 10px;
+
+}
+.rating {
+  width: 305px;
+  height: 90px;
+  background-color: yellow;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 895px;
+}
+.rating-text {
+  width: 100px;
+  height: 20px;
+}
+/*Не совсем понимаю как разметить блок .search-result, делать их с разными классами?
+, чтобы они не наезжали друг на друга?
+и вопрос по разметке названия отеля, цены и кнопок?*/
