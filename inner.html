@@ -1,0 +1,230 @@
+        <!DOCTYPE html>
+        <html lang="ru">
+        <head>
+          <meta charset="utf-8">
+          <title>HTML Academy: Седона</title>
+          <link rel="stylesheet" href="css/normilize.css">
+          <link rel="stylesheet" href="css/style.css">
+        </head>
+        <body>
+          <!--Информация-Гостиницы-->
+          <header class="main-header">
+            <div class="container clearfix">
+              <nav class="main-navigation">
+                <div class="left">
+                  <ul>
+                    <li>
+                      <a href="#">Информация</a>
+                    </li>
+                    <li>
+                      <a href="#">Фото и видео</a>
+                    </li>
+                  </ul>
+                </div>
+                <a class="logo" href="index.html">
+                  <img src="img/Logo-sedona.png" alt="Седона" width="140" height="75">
+                </a>
+                <div class="right">
+                  <ul>
+                    <li>
+                      <a href="#">Карта штата</a>
+                    </li>
+                    <li>
+                      <a href="#">Гостиницы</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </header>
+          <main class="container">
+            <div class="main">
+              <form method="get" action="https://echo.htmlacademy.ru/">
+               <div class="main-filter clearfix">
+                <div class="infrastructure">
+                  <div class="infrastructure-left">
+                    <p class="h2">Инфраструктура:</p>
+                    <label for="pond">
+                      <input type="checkbox" name="infrastructure" id="pond" value="Бассейн" checked><p class="h2">Бассейн</p>
+                    </label>
+                    <label for="parking">
+                      <input type="checkbox" name="infrastructure" id="parking" value="Парковка"><p class="h2">Парковка</p>
+                    </label>
+                    <label for="wifi">
+                      <input type="checkbox" name="infrastructure" id="wifi" value="WiFi"><p class="h2">Wi-Fi</p>
+                    </label>
+                  </div>
+                  <div class="infrastructure-right">
+                    <div class="house-type"><p class="h2">Тип жилья:</p>
+                    </div>
+                    <label for="hotel">
+                      <input type="checkbox" name="house-type" id="hotel" value="Гостиница" checked><p class="h2">Гостиница</p>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="house-type" id="motel" value="Мотель" checked><p class="h2">Мотель</p>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="house-type" id="apartment" value="Апартаменты" checked><p class="h2">Апартаменты</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="price">
+                  <div class="sum-over">
+                    <p class="h2">Стоимость в сутки(Р.)</p>
+                  </div>
+                  <div class="sum">
+                    <div class="sum-start">
+                      <p>От 0</p>
+                    </div>
+                    <div class="sum-finish">
+                      <p>До 3000</p>
+                    </div>
+                    <div class="sum-range">
+                    <img src="img/range.png" alt="" wiidth="250" height="2px">
+                   </div>
+                 </div>
+                 <button class="btn">Показать</button>
+               </div>
+             </div>
+           </form>
+           <div class="filter-search clearfix">
+            <div class="sorting-search">
+              <h1>Найдено:3</h1>
+            </div>
+            <div class="sorting-buttom">
+              <p class="h3"> Сортировка:</p>
+              <a href="#" class="price-button">
+                <p class="h3">По цене</p>
+              </a>
+              <a href="#" class="type-button">
+                <p class="h3">По типу </p>
+              </a>
+              <a href="#" class="rating-button">
+                <p class="h3">По рейтингу</p>
+              </a>
+            </div>
+            <div class="sorting-buttom-right">
+              <div class="buttom-right">
+                <a href="#" class="top">
+                  <img src="img/top.png" alt="По возрастанию" width="10" height="10">
+                </a>
+                <a href="#" class="bottom">
+                  <img src="img/button.png" alt="По убыванию" width="10" height="10">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="search-results">
+            <div class="search-result">
+              <div class="result-img">
+                <img src="img/amara_resort_spa.png" alt="" width="135" hight="90">
+              </div>
+              <div class="result-main">
+                <div class="result-name">
+                  <p class="h3">Amara resort &amp; spa</p>
+                </div>
+                <div class="result-type">
+                  <p class="h3">Гостиница</p>
+                  <p class="h3">От 4000 р.</p>
+                </div>
+                <div class="result-button">
+                  <a href="#">Подробнее</a>
+                  <a href="#">Забронировать</a>
+                </div>
+              </div>
+              <div class="rating">
+                <div class="rating-text">
+                  <p>Рейтинг:8.5</p>
+                </div>
+                <button class="button-rating">
+                  <img src="img/rating_4.png" alt="" width="90" height="20">
+                </button>
+              </div>
+            </div>
+            <div class="search-result">
+              <div class="result-img">
+                <img src="img/amara_resort_spa.png" alt="" width="135" hight="90">
+              </div>
+              <div class="result-main">
+                <div class="result-name">
+                  <p class="h3">Amara resort &amp; spa</p>
+                </div>
+                <div class="result-type">
+                  <p class="h3">Гостиница</p>
+                  <p class="h3">От 4000 р.</p>
+                </div>
+                <div class="result-button">
+                  <a href="#">Подробнее</a>
+                  <a href="#">Забронировать</a>
+                </div>
+              </div>
+              <div class="rating">
+                <div class="rating-text">
+                  <p>Рейтинг:8.5</p>
+                </div>
+                <button class="button-rating">
+                  <img src="img/rating_4.png" alt="" width="90" height="20">
+                </button>
+              </div>
+            </div>
+            <div class="search-result">
+              <div class="result-img">
+                <img src="img/amara_resort_spa.png" alt="" width="135" hight="90">
+              </div>
+              <div class="result-main">
+                <div class="result-name">
+                  <p class="h3">Amara resort &amp; spa</p>
+                </div>
+                <div class="result-type">
+                  <p class="h3">Гостиница</p>
+                  <p class="h3">От 4000 р.</p>
+                </div>
+                <div class="result-button">
+                  <a href="#">Подробнее</a>
+                  <a href="#">Забронировать</a>
+                </div>
+              </div>
+              <div class="rating">
+                <div class="rating-text">
+                  <p>Рейтинг:8.5</p>
+                </div>
+                <button class="button-rating">
+                  <img src="img/rating_4.png" alt="" width="90" height="20">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--main -->
+    </main>
+    <footer class="footer">
+      <div class="container clearfix">
+        <div class="footer-visit">
+          <a href="#">#VisitSedona</a>
+        </div>
+        <div class="footer-socials">
+          <div class="twitter">
+            <a class="btn-socials btn-tw" href="#">
+              <img src="img/t.png" alt="Twitter" width="20" height="20">
+            </a>
+          </div>
+          <div class="facebook">
+            <a class="btn-socials btn-fb" href="#">
+              <img src="img/f.png" alt="Facebook" width="20" height="20">
+            </a>
+          </div>
+          <div class="youtube">
+            <a class="btn-socials btn-yt" href="#">
+              <img src="img/youtube.png" alt="youtube" width="20" height="20">
+            </a>
+          </div>
+        </div>
+        <div class="footer-develop">
+          Website by
+          <a href="https://htmlacademy.ru">htmlacademy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  </html>

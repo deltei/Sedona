@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дельцова  Екатерина Игоревна](https://up.htmlacademy.ru/htmlcss/16/user/298621).
-* Наставник: [Александр Григоренко](https://up.htmlacademy.ru/htmlcss/16/user/15514).
+* Наставник: [Григоренко Александр Юрьевич](https://up.htmlacademy.ru/htmlcss/16/user/15514).
 
 ---
 
