@@ -37,7 +37,7 @@ body {
 }
 
 .main-navigation {
-  min-height: 60px;
+  height: 60px;
   width: 1200px;
   position: relative;
   z-index: 2;
@@ -82,7 +82,7 @@ body {
   position: relative;
   width: 100% ;
   height: 510px;
-  background-image: url("../img/backgroundphoto1200х570).png");
+  background-image: url("../img/background-index.png");
   background-repeat: no-repeat;
 }
 
@@ -105,6 +105,7 @@ body {
   bottom: 0px;
   width: 100%;
   height: 60px;
+  background-image: url(../img/background-index-bottom.png);
   background-size: 100% 60px;
   background-repeat: no-repeat;
 }
@@ -286,16 +287,19 @@ h1 {
 /*Модальное окно*/
 @keyframes search-offer {
    0% {
+    transform: translateY(2000px);
     opacity: 0;
    }
    33% {
+    transform: translateY(-50px);
     opacity: 0.5;
    }
    100% {
+    transform: translateY(0);
     opacity: 1;
    }
 }
-@keyframes shake {
+/*@keyframes shake {
   0%, 100% {
     transform: translateX(0);
   }
@@ -305,7 +309,7 @@ h1 {
   20%, 40%, 60%, 80% {
     transform: translateX(10px);
   }
-}
+}*/
 .search-error {
   animation: 0.6s;
 }
@@ -318,7 +322,7 @@ h1 {
   left: 350px;
   background-color: #fff;
   animation-name: search-offer;
-  animation-duration: 0.7s;
+  animation-duration: 1.7s;
 }
 
 .search-text  {
@@ -340,10 +344,6 @@ h1 {
   height: 290px;
 }
 
-form {
-  width: 460px;
-  height: 285px;
-}
 .start, .finish {
   display: flex;
   justify-content: center;
@@ -553,6 +553,94 @@ input[type="number"] {
 /*sedona-hotels////inner.html*/
 
 .main {
+  width: 100%;
+  height: 220px;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 220px;
+}
+
+.main-filter {
+  float: left;
+  width: 600px;
+  height: 220px;
+}
+
+.infrastructure {
+  width: 300px;
+  height: 220px;
+  background-color: #fff;
+}
+.infrastructure-left {
+  float: left;
+  width: 300px;
+  height: 220px;
+}
+
+.infrastructure-right {
+  float: right;
+  width: 300px;
+  height: 220px;
+}
+
+.filter-fonts, .price-fonts {
+  line-height: 21px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  padding-bottom:  40px;
+}
+.price-fonts {
+ padding: 0;
+}
+.price {
+  float: right;
+  width: 395px;
+  height: 220px;
+  margin-left: 205px;
+}
+.sum-over {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: -5px;
+}
+.sum {
+  width: 315px;
+  height: 35px;
+  border-radius: 3px;
+  border: 3px solid #fff;
+}
+.sum-start, .sum-finish {
+  float: left;
+  text-align: center;
+  width: 50%;
+  height: 35px;
+  margin: 7px 0;
+}
+.sum-finish {
+  float: right;
+}
+.btn-inner {
+  width: 135px;
+  height: 35px;
+  border: 3px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 30px 85px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
+
+
+/*.main {
   width: 1200px;
   height: 760px;
 
@@ -560,7 +648,7 @@ input[type="number"] {
 .main-filter {
   width: 1200px;
   height: 220px;
-  background: #000000 url("../img/Фон(hotels).jpg") 10% 0%;
+  background: #000000 url("../img/background.jpg") 10% 0%;
   background-size: 1200px 1200px;
 
 }
@@ -668,7 +756,7 @@ input[type="checkbox"] {
   height: 450px;
   background-color: yellow;
 }
-.search-result {/*Как оттолкнуть от*/
+.search-result {/*Как оттолкнуть от
   position: absolute;
   margin-top: 0px;
   width: 1200px;
@@ -723,7 +811,7 @@ input[type="checkbox"] {
   width: 100px;
   height: 20px;
 }
-
+*/
 
 
 /*Не совсем понимаю как разметить блок .search-result, делать их с разными классами?
