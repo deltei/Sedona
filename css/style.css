@@ -77,13 +77,6 @@ body {
   color: black;
 }
 
-.main-navigation a:hover {
-  color: #b3d1e4;
-}
-
-.main-navigation a:active {
-  color: #b2b2b2;
-}
 
 .image {
   position: relative;
@@ -291,7 +284,31 @@ h1 {
 }
 
 /*Модальное окно*/
-
+@keyframes search-offer {
+   0% {
+    opacity: 0;
+   }
+   33% {
+    opacity: 0.5;
+   }
+   100% {
+    opacity: 1;
+   }
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+.search-error {
+  animation: 0.6s;
+}
 .search-offer {
   position: absolute;
   width: 570px;
@@ -300,6 +317,8 @@ h1 {
   right: 350px;
   left: 350px;
   background-color: #fff;
+  animation-name: search-offer;
+  animation-duration: 0.7s;
 }
 
 .search-text  {
@@ -414,7 +433,39 @@ input[type="number"] {
   text-transform: uppercase;
   background-color: #81b3d2;
   color: #fff;
-  padding-bottom: 0px;
+}
+
+
+/*Styleguide*/
+
+
+.main-navigation a:hover {
+  color: #b3d1e4;
+}
+
+.main-navigation a:active {
+  color: #b2b2b2;
+}
+
+.btn:hover, .btn-socials:hover {
+  background-color: #669ec0;
+}
+
+.btn:active, {
+  color: #69a3c5;
+  background-color: #5496bd;
+}
+.btn-socials:active {
+  opacity: 0.5;
+}
+
+.footer-develop img:hover {
+  background-color: rgba(129, 179, 210, 0.5);
+  opacity: 0.7;
+}
+
+.footer-develop img:active {
+  opacity: 0.4;
 }
 
 /*Подвал*/
@@ -474,22 +525,17 @@ input[type="number"] {
 }
 
 .btn-socials {
-  background-color: #81b3d2;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ background-color: #81b3d2;
+ width: 40px;
+ height: 40px;
 }
 
 .btn-tw, .btn-fb {
   margin-right: 5px;
 }
-
-
-
-
-
 
 
 
