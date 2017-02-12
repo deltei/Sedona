@@ -53,7 +53,7 @@
               </div>
               <div class="infrastructure-right">
                 <div class="house-type">
-                <p class="filter-fonts">Тип жилья:</p>
+                  <p class="filter-fonts">Тип жилья:</p>
                 </div>
                 <label for="hotel">
                   <input type="checkbox" name="house-type" id="hotel" value="Гостиница" checked>
@@ -90,20 +90,20 @@
           </form>
         </div>
 
-        <div class="filter-search clearfix">
+        <div class="filter-search">
           <div class="sorting-search">
             <h1>Найдено:3</h1>
           </div>
           <div class="sorting-buttom">
-            <p class="h3"> Сортировка:</p>
+            <b class="sorting-header"> Сортировка:</b>
             <a href="#" class="price-button">
-              <p class="h3">По цене</p>
+              <p class="sorting-header">По цене</p>
             </a>
             <a href="#" class="type-button">
-              <p class="h3">По типу </p>
+              <p class="sorting-header">По типу </p>
             </a>
             <a href="#" class="rating-button">
-              <p class="h3">По рейтингу</p>
+              <p class="sorting-header">По рейтингу</p>
             </a>
           </div>
           <div class="sorting-buttom-right">
@@ -117,6 +117,7 @@
             </div>
           </div>
         </div>
+
         <div class="search-results">
           <div class="search-result">
             <div class="result-img">
@@ -124,11 +125,37 @@
             </div>
             <div class="result-main">
               <div class="result-name">
-                <p class="h3">Amara resort &amp; spa</p>
+                <p class="result-name-font">Amara resort &amp; spa</p>
               </div>
               <div class="result-type">
-                <p class="h3">Гостиница</p>
-                <p class="h3">От 4000 р.</p>
+                <p class="result-main-font">Гостиница</p>
+                <p class="result-main-font">От 4000 р.</p>
+              </div>
+              <div class="result-button">
+                <a href="#" class="info">Подробнее</a>
+                <a href="#">Забронировать</a>
+              </div>
+            </div>
+            <div class="rating">
+              <div class="rating-text">
+                <p class="rating-fonts">Рейтинг:8.5</p>
+              </div>
+              <button class="button-rating">
+                <img src="img/rating_4.png" alt="" width="90" height="20">
+              </button>
+            </div>
+          </div>
+          <div class="search-result">
+            <div class="result-img">
+              <img src="img/amara_resort_spa.png" alt="" width="135" hight="90">
+            </div>
+            <div class="result-main">
+              <div class="result-name">
+                <p class="result-name-font">DESERT QUAIL&nbsp;INN</p>
+              </div>
+              <div class="result-type">
+                <p class="result-main-font">Гостиница</p>
+                <p class="result-main-font">От 4000 р.</p>
               </div>
               <div class="result-button">
                 <a href="#">Подробнее</a>
@@ -150,37 +177,11 @@
             </div>
             <div class="result-main">
               <div class="result-name">
-                <p class="h3">Amara resort &amp; spa</p>
+                <p class="result-name-font">villas at&nbsp;poco diablo</p>
               </div>
               <div class="result-type">
-                <p class="h3">Гостиница</p>
-                <p class="h3">От 4000 р.</p>
-              </div>
-              <div class="result-button">
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
-              </div>
-            </div>
-            <div class="rating">
-              <div class="rating-text">
-                <p>Рейтинг:8.5</p>
-              </div>
-              <button class="button-rating">
-                <img src="img/rating_4.png" alt="" width="90" height="20">
-              </button>
-            </div>
-          </div>
-          <div class="search-result">
-            <div class="result-img">
-              <img src="img/amara_resort_spa.png" alt="" width="135" hight="90">
-            </div>
-            <div class="result-main">
-              <div class="result-name">
-                <p class="h3">Amara resort &amp; spa</p>
-              </div>
-              <div class="result-type">
-                <p class="h3">Гостиница</p>
-                <p class="h3">От 4000 р.</p>
+                <p class="result-main-font">Гостиница</p>
+                <p class="result-main-font">От 4000 р.</p>
               </div>
               <div class="result-button">
                 <a href="#">Подробнее</a>
@@ -199,32 +200,32 @@
         </div>
 
       </main>
-      <footer class="footer">
-        <div class="container clearfix">
-          <div class="footer-visit">
-            <a href="#">#VisitSedona</a>
+      <footer class="footer clearfix">
+        <div class="footer-visit">
+          <a href="index.html">#VisitSedona</a>
+        </div>
+        <div class="footer-socials">
+          <div class="twitter">
+            <a class="btn-socials btn-tw" href="#">
+              <img src="img/twitter-icon.png" alt="TW" width="17" height="15">
+            </a>
           </div>
-          <div class="footer-socials">
-            <div class="twitter">
-              <a class="btn-socials btn-tw" href="#">
-                <img src="img/t.png" alt="Twitter" width="20" height="20">
-              </a>
-            </div>
-            <div class="facebook">
-              <a class="btn-socials btn-fb" href="#">
-                <img src="img/f.png" alt="Facebook" width="20" height="20">
-              </a>
-            </div>
-            <div class="youtube">
-              <a class="btn-socials btn-yt" href="#">
-                <img src="img/youtube.png" alt="youtube" width="20" height="20">
-              </a>
-            </div>
+          <div class="facebook">
+            <a class="btn-socials btn-fb" href="#">
+              <img src="img/facebook-icon.png" alt="FB" width="10" height="19">
+            </a>
           </div>
-          <div class="footer-develop">
-            Website by
-            <a href="https://htmlacademy.ru">htmlacademy</a>
+          <div class="youtube">
+            <a class="btn-socials btn-yt" href="#">
+              <img src="img/youtube-icon.png" alt="Y" width="20" height="16">
+            </a>
           </div>
+        </div>
+        <div class="footer-develop">
+          <p>Website by</p>
+          <a href="https://htmlacademy.ru">
+            <img src="img/logo-develop.png" alt="HTMLACADEMY" width="115" height="40">
+          </a>
         </div>
       </footer>
     </div>

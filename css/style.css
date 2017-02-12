@@ -436,37 +436,6 @@ input[type="number"] {
 }
 
 
-/*Styleguide*/
-
-
-.main-navigation a:hover {
-  color: #b3d1e4;
-}
-
-.main-navigation a:active {
-  color: #b2b2b2;
-}
-
-.btn:hover, .btn-socials:hover {
-  background-color: #669ec0;
-}
-
-.btn:active, {
-  color: #69a3c5;
-  background-color: #5496bd;
-}
-.btn-socials:active {
-  opacity: 0.5;
-}
-
-.footer-develop img:hover {
-  background-color: rgba(129, 179, 210, 0.5);
-  opacity: 0.7;
-}
-
-.footer-develop img:active {
-  opacity: 0.4;
-}
 
 /*Подвал*/
 
@@ -624,89 +593,138 @@ input[type="number"] {
 .btn-inner {
   width: 135px;
   height: 35px;
-  border: 3px solid #fff;
   background-color: transparent;
   color: #fff;
   line-height: 21px;
   font-size: 14px;
   font-weight: normal;
+  text-transform: uppercase;
   margin: 30px 85px;
+   border: 3px solid #fff;
 }
 
 input[type="checkbox"] {
   display: none;
 }
 
-
-
-
-/*.main {
-  width: 1200px;
-  height: 760px;
-
+.filter-search {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 90px;
+border-bottom: 1px solid #e8e8e8;
 }
-.main-filter {
-  width: 1200px;
-  height: 220px;
-  background: #000000 url("../img/background.jpg") 10% 0%;
-  background-size: 1200px 1200px;
-
+.sorting-header {
+  margin: 0;
+  padding: 0;
+  line-height: 18px;
+  font-size: 12px;
 }
-.infrastructure {
-  float: left;
-  width: 600px;
-  height: 220px;
+.sorting-search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 255px;
+  height: 65px;
 }
-input[type="checkbox"] {
-  display: none;
-}
-.infrastructure-left {
-  float: left;
-  line-height: 35px;
-  padding-left: 75px;
-  width: 225px;
-  height: 220px;
-}
-.infrastructure-right {
-  float: right;
-  line-height: 35px;
-  padding-left: 75px;
-  width: 225px;
-  height: 220px;
-}
-.price {
-  float: right;
-  line-height: 35px;
-  padding-left: 75px;
-  width: 525px;
-  height: 220px;
-  color: #ffffff;
+.sorting-buttom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
 }
 
-.sum {
-  padding-left: auto;
-  padding-right: auto;
-  width: 320px;
-  height: 20px;
+.sorting-buttom a, .sorting-buttom p {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
 }
-.sum-start,.sum-finish {
-  float: left;
-  width: 150px;
-  height: 20px;
-  border: 3px solid #ffffff;
-  border-right: 3px dashed #ffffff;
-
-}
-.sum-finish {
-  margin-right: 0;
-  border-left: none;
-  border-right: 3px solid #ffffff;
+.sorting-buttom b {
+  padding: 0;
+  margin-right: 35px;
 }
 
-.sum p {
+.sorting-buttom p {
+  padding: 0;
+  margin-right: 35px;
+}
+
+.sorting-search h1 {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}
+
+.sorting-buttom-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 255px;
+}
+
+
+.search-results {
+  width: 100%;
+  height: 450px;
+ }
+
+.search-result {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.result-img {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  width: 170px;
+  height: 150px;
+}
+
+.result-main {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column;
+  width:  260px;
+}
+.result-name, .result-type, .result-button {
+  width: 260px;
+}
+.result-name-font {
+  line-height: 26px;
+  font-size: 21px;
+  color: #000;
+  text-transform: uppercase;
+}
+.result-main-font {
+  line-height: 21px;
+  font-size: 14px;
+  color: #000;
+  font-weight: normal;
+}
+.result-type {
+  display: flex;
+  justify-content: space-between;
+  width: 185px;
+}
+.rating {
+  width: 110px;
+  margin-left: 600px;
+}
+.rating-text {
+  width: 110px;
+  height: 25px;
   text-align: center;
-  vertical-align: middle;
+  background-color: #f2f2f2;
 }
+
+/*
 .filter-search {
   float: left;
   width: 1200px;
@@ -817,3 +835,48 @@ input[type="checkbox"] {
 /*Не совсем понимаю как разметить блок .search-result, делать их с разными классами?
 , чтобы они не наезжали друг на друга?
 и вопрос по разметке названия отеля, цены и кнопок?*/
+/*Styleguide*/
+
+
+.main-navigation a:hover {
+  color: #b3d1e4;
+}
+
+.main-navigation a:active {
+  color: #b2b2b2;
+}
+
+.btn:hover, .btn-socials:hover {
+  background-color: #669ec0;
+}
+
+.btn:active, {
+  color: #69a3c5;
+  background-color: #5496bd;
+}
+.btn-socials:active {
+  opacity: 0.5;
+}
+
+.footer-develop img:hover {
+  background-color: rgba(129, 179, 210, 0.5);
+  opacity: 0.7;
+}
+
+.footer-develop img:active {
+  opacity: 0.4;
+}
+
+.sorting-buttom p:hover {
+   color: #81b3d2;
+   border-bottom: 1px dotted #81b3d2;
+}
+.sorting-buttom p:active {
+  border: none;
+   color: #000;
+}
+.btn-inner:hover {
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+}
