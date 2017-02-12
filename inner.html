@@ -59,11 +59,11 @@
                   <input type="checkbox" name="house-type" id="hotel" value="Гостиница" checked>
                   <p class="filter-fonts">Гостиница</p>
                 </label>
-                <label>
+                <label for="motel">
                   <input type="checkbox" name="house-type" id="motel" value="Мотель" checked>
                   <p class="filter-fonts">Мотель</p>
                 </label>
-                <label>
+                <label for="apartament">
                   <input type="checkbox" name="house-type" id="apartment" value="Апартаменты" checked>
                   <p class="filter-fonts">Апартаменты</p>
                 </label>
@@ -72,17 +72,23 @@
             </div><!--main-filter -->
             <div class="price">
               <div class="sum-over">
-                <p class="price-fonts">Стоимость в сутки(Р.)</p>
+                Стоимость в сутки(Р.):
               </div>
-              <div class="sum">
-                <div class="sum-start">
-                  <p class="price-fonts">От 0</p>
+              <div class="price-controls">
+                <label for="min-price" class="min-price">От
+                  <input type="text" name="min-price" value="0" id="min-price">
+                </label>
+                <label for="max-price" class="max-price">До
+                  <input type="text" name="max-price" value="0" id="max-price">
+                </label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
                 </div>
-                <div class="sum-finish">
-                  <p class="price-fonts">До 3000</p>
+                <div class="range-toogle range-toogle-min">
                 </div>
-                <div class="sum-range">
-
+                <div class="range-toogle range-toogle-max">
                 </div>
               </div>
               <button class="btn-inner">Показать</button>
@@ -112,7 +118,7 @@
                 <img src="img/top.png" alt="По возрастанию" width="10" height="10">
               </a>
               <a href="#" class="bottom">
-                <img src="img/button.png" alt="По убыванию" width="10" height="10">
+                <img src="img/buttom.png" alt="По убыванию" width="10" height="10">
               </a>
             </div>
           </div>
@@ -137,12 +143,17 @@
               </div>
             </div>
             <div class="rating">
+
+              <div class="rating-img-header">
+                <button class="rating-img rating-img-one"></button>
+                <button class="rating-img rating-img-one"></button>
+                <button class="rating-img rating-img-one"></button>
+                <button class="rating-img rating-img-one"></button>
+                <button class="rating-img rating-img-one"></button>
+              </div>
               <div class="rating-text">
                 <p class="rating-fonts">Рейтинг:8.5</p>
               </div>
-              <button class="button-rating">
-                <img src="img/rating_4.png" alt="" width="90" height="20">
-              </button>
             </div>
           </div>
           <div class="search-result">
@@ -163,72 +174,77 @@
               </div>
             </div>
             <div class="rating">
-              <div class="rating-text">
-                <p>Рейтинг:8.5</p>
-              </div>
-              <button class="button-rating">
-                <img src="img/rating_4.png" alt="" width="90" height="20">
-              </button>
-            </div>
-          </div>
-          <div class="search-result">
-            <div class="result-img">
-              <img src="img/amara_resort_spa.png" alt="" width="135" hight="90">
-            </div>
-            <div class="result-main">
-              <div class="result-name">
-                <p class="result-name-font">villas at&nbsp;poco diablo</p>
-              </div>
-              <div class="result-type">
-                <p class="result-main-font">Гостиница</p>
-                <p class="result-main-font">От 4000 р.</p>
-              </div>
-              <div class="result-button">
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
-              </div>
-            </div>
-            <div class="rating">
-              <div class="rating-text">
-                <p>Рейтинг:8.5</p>
-              </div>
-              <button class="button-rating">
-                <img src="img/rating_4.png" alt="" width="90" height="20">
-              </button>
-            </div>
-          </div>
-        </div>
 
-      </main>
-      <footer class="footer clearfix">
-        <div class="footer-visit">
-          <a href="index.html">#VisitSedona</a>
-        </div>
-        <div class="footer-socials">
-          <div class="twitter">
-            <a class="btn-socials btn-tw" href="#">
-              <img src="img/twitter-icon.png" alt="TW" width="17" height="15">
-            </a>
-          </div>
-          <div class="facebook">
-            <a class="btn-socials btn-fb" href="#">
-              <img src="img/facebook-icon.png" alt="FB" width="10" height="19">
-            </a>
-          </div>
-          <div class="youtube">
-            <a class="btn-socials btn-yt" href="#">
-              <img src="img/youtube-icon.png" alt="Y" width="20" height="16">
-            </a>
+              <div class="rating-img-header">
+               <button class="rating-img rating-img-one"></button>
+               <button class="rating-img rating-img-one"></button>
+               <button class="rating-img rating-img-one"></button>
+             </div>
+             <div class="rating-text">
+              <p>Рейтинг:8.5</p>
+            </div>
           </div>
         </div>
-        <div class="footer-develop">
-          <p>Website by</p>
-          <a href="https://htmlacademy.ru">
-            <img src="img/logo-develop.png" alt="HTMLACADEMY" width="115" height="40">
+        <div class="search-result">
+          <div class="result-img">
+            <img src="img/amara_resort_spa.png" alt="" width="135" hight="90">
+          </div>
+          <div class="result-main">
+            <div class="result-name">
+              <p class="result-name-font">villas at&nbsp;poco diablo</p>
+            </div>
+            <div class="result-type">
+              <p class="result-main-font">Гостиница</p>
+              <p class="result-main-font">От 4000 р.</p>
+            </div>
+            <div class="result-button">
+              <a href="#">Подробнее</a>
+              <a href="#">Забронировать</a>
+            </div>
+          </div>
+          <div class="rating">
+            <div class="rating-img-header">
+              <button class="rating-img rating-img-one"></button>
+              <button class="rating-img rating-img-one"></button>
+            </div>
+            <div class="rating-text">
+              <p class="">Рейтинг:8.5</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer class="footer clearfix">
+      <div class="footer-visit">
+        <a href="index.html">#VisitSedona</a>
+      </div>
+      <div class="footer-socials">
+        <div class="twitter">
+          <a class="btn-socials btn-tw" href="#">
+            <img src="img/twitter-icon.png" alt="TW" width="17" height="15">
           </a>
         </div>
-      </footer>
-    </div>
-  </body>
+        <div class="facebook">
+          <a class="btn-socials btn-fb" href="#">
+            <img src="img/facebook-icon.png" alt="FB" width="10" height="19">
+          </a>
+        </div>
+        <div class="youtube">
+          <a class="btn-socials btn-yt" href="#">
+            <img src="img/youtube-icon.png" alt="Y" width="20" height="16">
+          </a>
+        </div>
+      </div>
+      <div class="footer-develop">
+        <p>Website by</p>
+        <a href="https://htmlacademy.ru">
+          <img src="img/logo-develop.png" alt="HTMLACADEMY" width="115" height="40">
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
 
-  </html>
+</html>
