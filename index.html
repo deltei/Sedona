@@ -55,7 +55,6 @@
                 <p class="image-block-header">Настоящий городок</p>
                 <p class="image-block-number">&mdash; №1 &mdash;</p>
                 <p class="image-block-description">Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
-
               </div>
               <div class="image-block-img">
                <img src="img/image-block.png" alt="Изображение-1" width="792" height="260">
@@ -79,7 +78,7 @@
             </div>
           </div>
 
-          <div class="image-block image-block-2 image-block-2clearfix">
+          <div class="image-block image-block-2 clearfix">
             <div class="image-block-img">
               <img src="img/image-block-2.png" alt="Изображение-2" width="792" height="260">
             </div>
@@ -113,71 +112,74 @@
             <p class="offer-text-main">Укажите предполагаемые даты поездки, <br> и&nbsp;мы&nbsp;покажем вам лучшее предложения гостиниц в&nbsp;седоне</p>
           </div>
           <div class="map">
-            <img src="img/map.png" alt="Карта" width="1200" height="600">
+            <!--<img src="img/map.png" alt="Карта" width="1200" height="600">-->
+            <iframe src="img/map.png" width="1200" height="600"></iframe>
           </div>
-          <section class="search-offer search-error">
+          <section class="search-offer">
             <div class="search-text">
               <p>Поиск гостиницы в седоне</p>
             </div>
-            <div class="main-search">
-              <form method="post" action="inner.html">
-                <div class="start">
-                  <div  class="data-text">
-                    <p>Дата заезда:</p>
+            <div class="search">
+              <div class="main-search">
+                <form method="post" action="inner.html">
+                  <div class="start">
+                    <div  class="data-text">
+                      <p>Дата заезда:</p>
+                    </div>
+                    <div class="date-start">
+                      <p class="date-main">24 апреля 2017</p>
+                      <label for="date-start">
+                        <input type="text" class="date-main" name="date-start" id="date-start" placeholder="24 апреля 2017">
+                      </label>
+                      <div class="date-img"></div>
+                    </div>
                   </div>
-                  <div class="date-start">
-                    <p class="date-main">24 апреля 2017</p>
-                    <label for="date-start">
-                      <input type="text" class="date-main" name="date-start" id="date-start" placeholder="24 апреля 2017">
-                    </label>
-                    <div class="date-img"></div>
+                  <div class="finish">
+                    <div class="data-text">
+                      <p>Дата выезда:</p>
+                    </div>
+                    <div class="date-finish">
+                      <p class="date-main">4 апреля 2017</p>
+                      <label for="date-finish">
+                        <input type="text" class="date-main" name="date-finish" id="date-finish" placeholder="4 июля 2017">
+                      </label>
+                      <div class="date-img"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="finish">
-                  <div class="data-text">
-                    <p>Дата выезда:</p>
-                  </div>
-                  <div class="date-finish">
-                    <p class="date-main">4 апреля 2017</p>
-                    <label for="date-finish">
-                      <input type="text" class="date-main" name="date-finish" id="date-finish" placeholder="4 июля 2017">
-                    </label>
-                    <div class="date-img"></div>
-                  </div>
-                </div>
-                <div class="people-container">
-                 <div class="people">
-                   <div class="people-type-adults">
-                     <label for="adults">Взрослые
-                      <input type="text" name="adults" value="2" id="adults">
+                  <div class="people-container">
+                   <div class="people">
+                     <div class="people-type-adults">
+                       <label for="adults">Взрослые
+                        <input type="text" name="adults" value="2" id="adults">
+                      </label>
+                      <div class="people-quant">
+                        <div class="quant-minus"></div>
+                        <div class="quant-adults"></div>
+                        <div class="quant-added"></div>
+                      </div>
+                    </div>
+                    <div class="people-type-children">
+                     <label for="children">Дети
+                      <input type="text" name="children" value="0" id="children">
                     </label>
                     <div class="people-quant">
                       <div class="quant-minus"></div>
-                      <div class="quant-adults"></div>
+                      <div class="quant-child"></div>
                       <div class="quant-added"></div>
                     </div>
                   </div>
-                  <div class="people-type-children">
-                   <label for="children">Дети
-                    <input type="text" name="children" value="0" id="children">
-                  </label>
-                  <div class="people-quant">
-                    <div class="quant-minus"></div>
-                    <div class="quant-child"></div>
-                    <div class="quant-added"></div>
-                  </div>
                 </div>
               </div>
-            </div>
-            <button class="btn">Найти</button>
-          </form>
+              <button class="btn">Найти</button>
+            </form>
+          </div>
         </div>
       </section>
     </div>
   </main>
   <footer class="footer clearfix">
     <div class="footer-visit">
-      <a href="index.html">#VisitSedona</a>
+      <a>#VisitSedona</a>
     </div>
     <div class="footer-socials">
       <div class="twitter">
@@ -202,5 +204,26 @@
     </div>
   </footer>
 </div>
+<script>
+   /*
+     var close = document.querySelector(".offer-text");
+
+     var popup = document.querySelector(".search");
+
+
+     close.addEventListener("click", function(event) {
+
+     popup.classList.add("search-close")
+
+     popup.classList.remove("search-close")
+   });
+
+   /*
+    1.Находим блок? нажав на который будет закрываться окно
+   */
+
+
+
+</script>
 </body>
 </html>
