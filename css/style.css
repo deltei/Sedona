@@ -24,7 +24,7 @@
   .container {
     width: 1200px;
     height: auto;
-    margin-left: 40px;
+    margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
@@ -382,7 +382,6 @@ input[type="button"] {
   height: 5px;
   top: 195px;
   left: 570px;
-  background-color: red;
 }
 .search-text  {
   width: 570px;
@@ -636,10 +635,10 @@ input[type="number"] {
 }
 
 .footer-develop p {
-  text-align: center;
   font-weight: normal;
   line-height: 26px;
   font-size: 14px;
+  padding-right: 8px;
  }
 
 .footer-develop img {
@@ -839,7 +838,9 @@ input[type="checkbox"]:disabled +label::before {
   color: #fff;
   margin: 0;
   padding-left: 40px;
-
+}
+.filter-fonts-span:hover {
+  cursor: pointer;
 }
 .price-fonts {
   padding: 0;
@@ -879,6 +880,7 @@ input[type="checkbox"]:disabled +label::before {
   border: 3px solid #fff;
   border-radius: 2px;
   outline: none;
+  cursor: pointer;
 }
 
 /*Фильтр*/
@@ -916,6 +918,11 @@ input[type="checkbox"]:disabled +label::before {
 .price-controls .max-price {
   width: 90px;
   padding-left: 65px;
+}
+
+input[type="text"]:focus .min-price,
+input[type="text"]:focus .max-price  {
+  opacity: none;
 }
 
 .price-controls input {
@@ -1099,6 +1106,8 @@ input[type="checkbox"]:disabled +label::before {
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;
+  line-height: 21px;
+  font-size: 16px;
 }
 
 .result-button a:first-child {
@@ -1125,8 +1134,8 @@ input[type="checkbox"]:disabled +label::before {
 
 .result-button a:last-child {
   width: 140px;
-  height: 25px;
-  padding-top: 5px;
+  height: 22px;
+  padding: 5px 0;
   text-align: center;
   line-height: 21px;
   font-size: 16px;
