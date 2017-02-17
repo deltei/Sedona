@@ -771,10 +771,7 @@ input[type="number"] {
 .infrastructure-right label:last-child,
 .infrastructure-left label:last-child {
   padding-bottom: 20px;
-  } {
-    padding-bottom: 20px;
   }
-
 
   input[type="checkbox"] {
     display: none;
