@@ -5,7 +5,7 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="wrapper">
@@ -13,22 +13,18 @@
    <header class="main-header">
     <nav class="main-navigation clearfix">
       <ul>
-        <div class="left">
-          <li>
+          <li class="left">
             <a href="#">Информация</a>
           </li>
           <li>
             <a href="#">Фото и видео</a>
           </li>
-        </div>
-        <div class="right">
-          <li>
+          <li class="right">
             <a href="#">Карта штата</a>
           </li>
-          <li>
+          <li class="right">
             <a href="inner.html">Гостиницы</a>
           </li>
-        </div>
       </ul>
       <div class="logo">
         <a>
@@ -154,7 +150,7 @@
                <div class="people-quant">
                 <div class="quant-minus"></div>
                 <div class="quant-adults">
-                <input type="number" value="2" id="adults">
+                <input type="text" value="2" name="adults-quant" id="adults">
                 </div>
                 <div class="quant-added"></div>
               </div>
@@ -164,7 +160,7 @@
           <div class="people-quant">
             <div class="quant-minus"></div>
             <div class="quant-child">
-              <input type="number" value="0" id="children">
+              <input type="text" value="0" name="children-quant" id="children">
             </div>
             <div class="quant-added"></div>
           </div>
