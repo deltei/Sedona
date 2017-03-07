@@ -163,7 +163,6 @@
     font-size: 21px;
     color: black;
     font-weight: bold;
-
   }
 
   .image-block-header {
@@ -389,26 +388,19 @@
   .search {
     display: block;
   }
-  .search-close {
-    display: none;
-  }
 
   .search-offer {
     position: absolute;
+    display: block;
     width: 570px;
     height: 502px;
-    top: 185px;
+    top: 182px;
     left: 315px;
     background-color: #fff;
     animation-name: search-offer;
     animation-duration: 1.7s;
   }
-  input[type="button"] {
-    width: 5px;
-    height: 5px;
-    top: 195px;
-    left: 570px;
-  }
+
   .search-text  {
     width: 570px;
     height: 86px;
@@ -602,6 +594,18 @@
     color: #000;
 }
 
+.closed {
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/added-peace.png");
+  transform: rotate(45deg);
+}
+.close {
+  display: none;
+}
 .btn {
   width: 457px;
   height: 60px;
